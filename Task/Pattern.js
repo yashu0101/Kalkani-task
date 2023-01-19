@@ -10,7 +10,7 @@
 //        1 3 A
 //      1 3 5 A B
 //    1 3 5 7 A B C
-//  1 3 5 7 9 A B C D
+//  1 3 5 7 9 A B CD
 //    1 3 5 7 A B C
 //      1 3 5 A B
 //        1 3 A
@@ -34,14 +34,14 @@ let string = "";
 
 for (i = 1; i <= num; i++) {
   for (j = 0; j < num - i; j++) {
-    string += " ";
+    string += "  ";
   }
   for (k = 0; k <= i * 2 - 1; k++) {
     if (k % 2 != 0) {
-      string += k;
+      string += " " + k;
       if (k != 1 && k == i * 2 - 1) {
         for (m = 0; m < i - 1; m++) {
-          string += String.fromCharCode(m + 65);
+          string += " " + String.fromCharCode(m + 65);
         }
       }
     }
@@ -51,14 +51,14 @@ for (i = 1; i <= num; i++) {
 
 for (i = num - 1; i > 0; i--) {
   for (j = 0; j < num - i; j++) {
-    string += " ";
+    string += "  ";
   }
   for (k = 1; k <= i * 2 - 1; k++) {
     if (k % 2 != 0) {
-      string += k;
+      string += " " + k;
       if (k != 1 && k == i * 2 - 1) {
         for (m = 0; m < i - 1; m++) {
-          string += String.fromCharCode(m + 65);
+          string += " " + String.fromCharCode(m + 65);
         }
       }
     }

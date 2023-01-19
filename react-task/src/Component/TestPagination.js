@@ -115,7 +115,7 @@ const TestPagination = () => {
             <Grid item sx={6} md={4} lg={4}>
               <Typography align="center" style={{ color: "#fff" }}>{`Total ${
                 search ? data.length : allCount
-              } Matching anime character`}</Typography>
+              }  anime`}</Typography>
             </Grid>
             <Grid item xs={3} md={4} lg={4}>
               <Button
